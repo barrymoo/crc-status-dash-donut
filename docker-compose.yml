@@ -5,4 +5,6 @@ services:
     ports:
       - "8000:8000"
     command: gunicorn -w 1 -b :8000 app:server
-    image: barrymoo/crc-status-donut
+    image: barrymoo/crc-status-weekly
+    env_file:
+      - .env
