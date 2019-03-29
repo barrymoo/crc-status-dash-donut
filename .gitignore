@@ -1,3 +1,2 @@
-test/
-k8s/
-Dockerfile
+tests/
+.env
