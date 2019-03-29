@@ -14,10 +14,9 @@ center.
 #### Software Resources
 
 - [Dash](https://plot.ly/products/dash/) for plotting and updates on the fly
-- [mLab](https://mlab.com/welcome/) and
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and
   [PyMongo](http://api.mongodb.com/python/current/tutorial.html) for hosting
   and writing/reading to/from MongoDB
-- [Heroku](https://www.heroku.com) for hosting the app
 
 #### Data Collection
 
