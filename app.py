@@ -117,6 +117,8 @@ def generate_layout(labels, data):
 
 
 def query_most_recent_data():
+    client = pymongo.MongoClient(uri)
+    db = client.get_database()
     items = list(db["status"].find({}).sort("_id", pymongo.DESCENDING).limit(1))
     data = {}
     for item in items:
@@ -135,8 +137,6 @@ server = app.server
 
 # Ready the database
 uri = os.environ["MONGO_URI"]
-client = pymongo.MongoClient(uri)
-db = client.get_database()
 
 # Global variables which do not change
 clusters = ["smp", "gpu", "mpi", "htc"]
